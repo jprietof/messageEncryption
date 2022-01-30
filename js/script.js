@@ -14,9 +14,7 @@ function encriptarMensaje() {
          let letra = new RegExp(llaves[posicion],"ig");  // recorre el array y remplaza
          mensajeEncriptado = mensajeEncriptado.replace(letra, oculto[posicion]);
       }
-      document.getElementById("msg").value = mensajeEncriptado;
-      console.log(mensajeEncriptado);
-      //return alert(mensajeEncriptado);
+      document.getElementById("msg").innerHTML = mensajeEncriptado;
    }
    
 }
@@ -38,9 +36,7 @@ function desencriptarMensaje() {
          let desifrar = new RegExp (oculto[posicion],"ig");
          desencriptarMsg = desencriptarMsg.replace(desifrar, llaves[posicion]);
       }
-      document.getElementById("msg").value = desencriptarMsg;
-      console.log(desencriptarMsg);
-      //return console.log(mensajeIncriptado);
+      document.getElementById("msg").innerHTML = desencriptarMsg;
    }
 }
 /*-------------------------------------------
@@ -57,6 +53,7 @@ function copiarTxt() {
 ---------------------------------------------*/
 //limpiar errores
 function limpiarVerificacion(){
+   document.getElementById("msg").innerHTML = "";
    let estado = document.getElementsByTagName('span');
    for(let i=0; i<estado.length; i++){
       estado[i].innerHTML="";

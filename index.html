@@ -15,6 +15,7 @@
         <form action="">
           <label for="input-texto">Solo letras minúsculas, sin acento</label>
           <textarea name="text-input" id="text-input" class="text-input" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+          <p><span id="errorCampo"></span></p>
           <input class="btn" type="button" value="encriptar!" id="btn-encriptar">
           <input class="btn" type="button" value="desencriptar!" id="btn-desencriptar">
         </form>
@@ -23,11 +24,11 @@
       <section class="msg box">
         <label id="">Mensaje encriptado:</label>
         <textarea name="msg" id="msg" class="text-input" cols="30" rows="10"></textarea>
-        <p id="prueba"></p>
+        <p><span id="text-copy"></span></p>
         <input class="btn" type="button" value="copiar" id="btn-copy">
       </section>
     </main>
-    <footer>Jorge Prieto student</footer>
+    <footer>Jorge Prieto | alura latam | Oracle One</footer>
     <script src="js/script.js"></script>
 </body>
 </html>

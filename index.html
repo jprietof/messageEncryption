@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptación</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <h1 class="titulo">código secreto</h1>
@@ -13,17 +14,20 @@
       <section class="form box">
         <form action="">
           <label for="input-texto">Solo letras minúsculas, sin acento</label>
-          <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui">
-          <input class="btn" type="submit" value="encriptar!" id="btn-encriptar">
-          <input class="btn" type="submit" value="desencriptar!" id="btn-desencriptar">
+          <textarea name="text-input" id="text-input" class="text-input" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+          <input class="btn" type="button" value="encriptar!" id="btn-encriptar">
+          <input class="btn" type="button" value="desencriptar!" id="btn-desencriptar">
         </form>
       </section>
     
       <section class="msg box">
-        <h2 id="">Mensaje encriptada:</h2>
-        <input class="text-input" type="text" id="msg"></input>
-        <input class="btn" type="submit" value="copiar" id="btn-copy">
+        <label id="">Mensaje encriptado:</label>
+        <textarea name="msg" id="msg" class="text-input" cols="30" rows="10"></textarea>
+        <p id="prueba"></p>
+        <input class="btn" type="button" value="copiar" id="btn-copy">
       </section>
     </main>
+    <footer>Jorge Prieto student</footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
